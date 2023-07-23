@@ -1,0 +1,48 @@
+[
+  {
+    "type": "mutation",
+    "id": "robotic_limb_arm_l",
+    "name": { "str": "ロボット義肢(左腕)" },
+    "points": 0,
+    "description": "義肢を装着しています。取り外すには変異メニューから無効化してください。",
+    "purifiable": false,
+    "active": true,
+    "starts_active": true,
+    "integrated_armor": [ "integrated_robotic_limb_arm_l" ],
+    "deactivated_eocs": [ "EOC_RL_uninstall_robotic_limb_arm_l" ],
+    "enchantments": [ "ench_robotic_limb_arm_l" ],
+    "flags": [ "ROBOTIC_LIMB_ARM_L" ]
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_robotic_limb_arm_l",
+    "//": "ロボット義肢(左腕)",
+    "condition": "ALWAYS",
+    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
+    "ench_effects": [ { "effect": "effect_robotic_limb_armset", "intensity": 1 } ],
+    "modified_bodyparts": [ { "gain": "arm_l" }, { "gain": "hand_l" } ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "robotic_limb_arm_l",
+    "name": { "str": "ロボット義肢(左腕)", "str_pl": "ロボット義肢(左腕)" },
+    "description": "大変動以前の技術で作られたロボット義肢です。一般に出回っていたものの中ではかなり高い性能を持ち、本来の四肢とほとんど変わらない動きを可能とします。",
+    "copy-from": "rl_arm_base",
+    "material": [ "steel", "plastic" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_robotic_limb_arm_l",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "robotic_limb_arm_l", "limb": "robotic_limb_arm_l", "hp": "100" }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

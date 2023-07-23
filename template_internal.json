@@ -1,0 +1,123 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_uninstall_robotic_limb_arm_l",
+    "effect": [
+      {
+        "run_eocs": [
+          "EOC_RL_get_hp_rank_arm_l",
+          {
+            "id": "EOC_RL_uninstall_robotic_limb_arm_l_4",
+            "condition": { "math": [ "hp_rank", "==", "4" ] },
+            "effect": { "u_spawn_item": "robotic_limb_arm_l", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_robotic_limb_arm_l_3",
+            "condition": { "math": [ "hp_rank", "==", "3" ] },
+            "effect": { "u_spawn_item": "robotic_limb_arm_l_75", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_robotic_limb_arm_l_2",
+            "condition": { "math": [ "hp_rank", "==", "2" ] },
+            "effect": { "u_spawn_item": "robotic_limb_arm_l_50", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_robotic_limb_arm_l_1",
+            "condition": { "math": [ "hp_rank", "==", "1" ] },
+            "effect": { "u_spawn_item": "robotic_limb_arm_l_25", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_robotic_limb_arm_l_0",
+            "condition": { "math": [ "hp_rank", "==", "0" ] },
+            "effect": { "u_spawn_item": "robotic_limb_arm_l_0", "count": 1, "suppress_message": true }
+          }
+        ]
+      },
+      { "u_lose_trait": "robotic_limb_arm_l" }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "robotic_limb_arm_l_75",
+    "copy-from": "robotic_limb_arm_l",
+    "name": { "str": "ロボット義肢(左腕)(75%)", "str_pl": "ロボット義肢(左腕)(75%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_robotic_limb_arm_l_75",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "robotic_limb_arm_l_75", "limb": "robotic_limb_arm_l", "hp": "75" }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "robotic_limb_arm_l_50",
+    "copy-from": "robotic_limb_arm_l",
+    "name": { "str": "ロボット義肢(左腕)(50%)", "str_pl": "ロボット義肢(左腕)(50%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_robotic_limb_arm_l_50",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "robotic_limb_arm_l_50", "limb": "robotic_limb_arm_l", "hp": "50" }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "robotic_limb_arm_l_25",
+    "copy-from": "robotic_limb_arm_l",
+    "name": { "str": "ロボット義肢(左腕)(25%)", "str_pl": "ロボット義肢(左腕)(25%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_robotic_limb_arm_l_25",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "robotic_limb_arm_l_25", "limb": "robotic_limb_arm_l", "hp": "25" }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "robotic_limb_arm_l_0",
+    "copy-from": "robotic_limb_arm_l",
+    "name": { "str": "ロボット義肢(左腕)(0%)", "str_pl": "ロボット義肢(左腕)(0%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_robotic_limb_arm_l_0",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "robotic_limb_arm_l_0", "limb": "robotic_limb_arm_l", "hp": "0" }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

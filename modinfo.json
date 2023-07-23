@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "RoboticLimb",
+    "name": "追加 - ロボット義肢",
+    "authors": [ "lispcoc" ],
+    "description": "手足の欠損とそれを補う高度なロボット義肢の要素を追加します。",
+    "dependencies": [ "dda" ],
+    "path": "./json"
+  }
+]

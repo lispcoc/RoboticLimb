@@ -1,0 +1,518 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_l",
+    "effect": [
+      {
+        "run_eocs": [
+          "EOC_RL_get_hp_rank_arm_l",
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_l_4",
+            "condition": { "math": [ "hp_rank", "==", "4" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_l", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_l_3",
+            "condition": { "math": [ "hp_rank", "==", "3" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_l_75", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_l_2",
+            "condition": { "math": [ "hp_rank", "==", "2" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_l_50", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_l_1",
+            "condition": { "math": [ "hp_rank", "==", "1" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_l_25", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_l_0",
+            "condition": { "math": [ "hp_rank", "==", "0" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_l_0", "count": 1, "suppress_message": true }
+          }
+        ]
+      },
+      { "u_lose_trait": "lesser_robotic_limb_arm_l" }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_arm_l_75",
+    "copy-from": "lesser_robotic_limb_arm_l",
+    "name": { "str": "廉価ロボット義肢(左腕)(75%)", "str_pl": "廉価ロボット義肢(左腕)(75%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_arm_l_75",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "lesser_robotic_limb_arm_l_75", "limb": "lesser_robotic_limb_arm_l", "hp": "75" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_arm_l_50",
+    "copy-from": "lesser_robotic_limb_arm_l",
+    "name": { "str": "廉価ロボット義肢(左腕)(50%)", "str_pl": "廉価ロボット義肢(左腕)(50%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_arm_l_50",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "lesser_robotic_limb_arm_l_50", "limb": "lesser_robotic_limb_arm_l", "hp": "50" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_arm_l_25",
+    "copy-from": "lesser_robotic_limb_arm_l",
+    "name": { "str": "廉価ロボット義肢(左腕)(25%)", "str_pl": "廉価ロボット義肢(左腕)(25%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_arm_l_25",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "lesser_robotic_limb_arm_l_25", "limb": "lesser_robotic_limb_arm_l", "hp": "25" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_arm_l_0",
+    "copy-from": "lesser_robotic_limb_arm_l",
+    "name": { "str": "廉価ロボット義肢(左腕)(0%)", "str_pl": "廉価ロボット義肢(左腕)(0%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_arm_l_0",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "lesser_robotic_limb_arm_l_0", "limb": "lesser_robotic_limb_arm_l", "hp": "0" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_r",
+    "effect": [
+      {
+        "run_eocs": [
+          "EOC_RL_get_hp_rank_arm_r",
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_r_4",
+            "condition": { "math": [ "hp_rank", "==", "4" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_r", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_r_3",
+            "condition": { "math": [ "hp_rank", "==", "3" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_r_75", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_r_2",
+            "condition": { "math": [ "hp_rank", "==", "2" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_r_50", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_r_1",
+            "condition": { "math": [ "hp_rank", "==", "1" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_r_25", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_arm_r_0",
+            "condition": { "math": [ "hp_rank", "==", "0" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_arm_r_0", "count": 1, "suppress_message": true }
+          }
+        ]
+      },
+      { "u_lose_trait": "lesser_robotic_limb_arm_r" }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_arm_r_75",
+    "copy-from": "lesser_robotic_limb_arm_r",
+    "name": { "str": "廉価ロボット義肢(右腕)(75%)", "str_pl": "廉価ロボット義肢(右腕)(75%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_arm_r_75",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_r",
+              "variables": { "item": "lesser_robotic_limb_arm_r_75", "limb": "lesser_robotic_limb_arm_r", "hp": "75" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_arm_r_50",
+    "copy-from": "lesser_robotic_limb_arm_r",
+    "name": { "str": "廉価ロボット義肢(右腕)(50%)", "str_pl": "廉価ロボット義肢(右腕)(50%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_arm_r_50",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_r",
+              "variables": { "item": "lesser_robotic_limb_arm_r_50", "limb": "lesser_robotic_limb_arm_r", "hp": "50" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_arm_r_25",
+    "copy-from": "lesser_robotic_limb_arm_r",
+    "name": { "str": "廉価ロボット義肢(右腕)(25%)", "str_pl": "廉価ロボット義肢(右腕)(25%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_arm_r_25",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_r",
+              "variables": { "item": "lesser_robotic_limb_arm_r_25", "limb": "lesser_robotic_limb_arm_r", "hp": "25" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_arm_r_0",
+    "copy-from": "lesser_robotic_limb_arm_r",
+    "name": { "str": "廉価ロボット義肢(右腕)(0%)", "str_pl": "廉価ロボット義肢(右腕)(0%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_arm_r_0",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_r",
+              "variables": { "item": "lesser_robotic_limb_arm_r_0", "limb": "lesser_robotic_limb_arm_r", "hp": "0" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_l",
+    "effect": [
+      {
+        "run_eocs": [
+          "EOC_RL_get_hp_rank_leg_l",
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_l_4",
+            "condition": { "math": [ "hp_rank", "==", "4" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_l", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_l_3",
+            "condition": { "math": [ "hp_rank", "==", "3" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_l_75", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_l_2",
+            "condition": { "math": [ "hp_rank", "==", "2" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_l_50", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_l_1",
+            "condition": { "math": [ "hp_rank", "==", "1" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_l_25", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_l_0",
+            "condition": { "math": [ "hp_rank", "==", "0" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_l_0", "count": 1, "suppress_message": true }
+          }
+        ]
+      },
+      { "u_lose_trait": "lesser_robotic_limb_leg_l" }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_leg_l_75",
+    "copy-from": "lesser_robotic_limb_leg_l",
+    "name": { "str": "廉価ロボット義肢(左脚)(75%)", "str_pl": "廉価ロボット義肢(左脚)(75%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_leg_l_75",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_l",
+              "variables": { "item": "lesser_robotic_limb_leg_l_75", "limb": "lesser_robotic_limb_leg_l", "hp": "75" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_leg_l_50",
+    "copy-from": "lesser_robotic_limb_leg_l",
+    "name": { "str": "廉価ロボット義肢(左脚)(50%)", "str_pl": "廉価ロボット義肢(左脚)(50%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_leg_l_50",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_l",
+              "variables": { "item": "lesser_robotic_limb_leg_l_50", "limb": "lesser_robotic_limb_leg_l", "hp": "50" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_leg_l_25",
+    "copy-from": "lesser_robotic_limb_leg_l",
+    "name": { "str": "廉価ロボット義肢(左脚)(25%)", "str_pl": "廉価ロボット義肢(左脚)(25%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_leg_l_25",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_l",
+              "variables": { "item": "lesser_robotic_limb_leg_l_25", "limb": "lesser_robotic_limb_leg_l", "hp": "25" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_leg_l_0",
+    "copy-from": "lesser_robotic_limb_leg_l",
+    "name": { "str": "廉価ロボット義肢(左脚)(0%)", "str_pl": "廉価ロボット義肢(左脚)(0%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_leg_l_0",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_l",
+              "variables": { "item": "lesser_robotic_limb_leg_l_0", "limb": "lesser_robotic_limb_leg_l", "hp": "0" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_r",
+    "effect": [
+      {
+        "run_eocs": [
+          "EOC_RL_get_hp_rank_leg_r",
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_r_4",
+            "condition": { "math": [ "hp_rank", "==", "4" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_r", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_r_3",
+            "condition": { "math": [ "hp_rank", "==", "3" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_r_75", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_r_2",
+            "condition": { "math": [ "hp_rank", "==", "2" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_r_50", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_r_1",
+            "condition": { "math": [ "hp_rank", "==", "1" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_r_25", "count": 1, "suppress_message": true }
+          },
+          {
+            "id": "EOC_RL_uninstall_lesser_robotic_limb_leg_r_0",
+            "condition": { "math": [ "hp_rank", "==", "0" ] },
+            "effect": { "u_spawn_item": "lesser_robotic_limb_leg_r_0", "count": 1, "suppress_message": true }
+          }
+        ]
+      },
+      { "u_lose_trait": "lesser_robotic_limb_leg_r" }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_leg_r_75",
+    "copy-from": "lesser_robotic_limb_leg_r",
+    "name": { "str": "廉価ロボット義肢(右脚)(75%)", "str_pl": "廉価ロボット義肢(右脚)(75%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_leg_r_75",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_r",
+              "variables": { "item": "lesser_robotic_limb_leg_r_75", "limb": "lesser_robotic_limb_leg_r", "hp": "75" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_leg_r_50",
+    "copy-from": "lesser_robotic_limb_leg_r",
+    "name": { "str": "廉価ロボット義肢(右脚)(50%)", "str_pl": "廉価ロボット義肢(右脚)(50%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_leg_r_50",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_r",
+              "variables": { "item": "lesser_robotic_limb_leg_r_50", "limb": "lesser_robotic_limb_leg_r", "hp": "50" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_leg_r_25",
+    "copy-from": "lesser_robotic_limb_leg_r",
+    "name": { "str": "廉価ロボット義肢(右脚)(25%)", "str_pl": "廉価ロボット義肢(右脚)(25%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_leg_r_25",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_r",
+              "variables": { "item": "lesser_robotic_limb_leg_r_25", "limb": "lesser_robotic_limb_leg_r", "hp": "25" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lesser_robotic_limb_leg_r_0",
+    "copy-from": "lesser_robotic_limb_leg_r",
+    "name": { "str": "廉価ロボット義肢(右脚)(0%)", "str_pl": "廉価ロボット義肢(右脚)(0%)" },
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_lesser_robotic_limb_leg_r_0",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_r",
+              "variables": { "item": "lesser_robotic_limb_leg_r_0", "limb": "lesser_robotic_limb_leg_r", "hp": "0" }
+            }
+          ]
+        }
+      ]
+    },
+    "material": [ "iron", "plastic" ],
+    "description": "大変動以前の技術で作られたロボット義肢です。比較的安価で性能もまずまずなのでそれなりの数が出回りました。細かい作業は苦手ですが、日常生活には概ね支障はないでしょう。"
+  }
+]

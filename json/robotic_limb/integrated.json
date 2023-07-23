@@ -1,0 +1,48 @@
+[
+  {
+    "id": "effect_robotic_limb_arm",
+    "type": "effect_type",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
+    "limb_score_mods": [
+      { "limb_score": "swim", "modifier": 0.8, "scaling": -0.2 },
+      { "limb_score": "crawl", "modifier": 0.8, "scaling": -0.2 }
+    ]
+  },
+  {
+    "id": "effect_robotic_limb_leg",
+    "type": "effect_type",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
+    "limb_score_mods": [
+      { "limb_score": "swim", "modifier": 0.8, "scaling": -0.2 },
+      { "limb_score": "crawl", "modifier": 0.8, "scaling": -0.2 }
+    ]
+  },
+  {
+    "id": "integrated_robotic_limb_arm_l",
+    "type": "ARMOR",
+    "name": { "str": "ロボット義肢(左腕)" },
+    "copy-from": "rl_integrated_arm_base"
+  },
+  {
+    "id": "integrated_robotic_limb_arm_r",
+    "type": "ARMOR",
+    "name": { "str": "ロボット義肢(右腕)" },
+    "copy-from": "rl_integrated_arm_base"
+  },
+  {
+    "id": "integrated_robotic_limb_leg_l",
+    "type": "ARMOR",
+    "name": { "str": "ロボット義肢(左脚)" },
+    "copy-from": "rl_integrated_leg_base"
+  },
+  {
+    "id": "integrated_robotic_limb_leg_r",
+    "type": "ARMOR",
+    "name": { "str": "ロボット義肢(右脚)" },
+    "copy-from": "rl_integrated_leg_base"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "type": "json_flag",
+    "id": "LOSS_ARM_L"
+  },
+  {
+    "type": "json_flag",
+    "id": "ROBOTIC_LIMB_ARM_L"
+  }
+]

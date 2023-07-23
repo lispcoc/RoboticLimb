@@ -1,0 +1,115 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_set_hp_perc_arm_l",
+    "effect": [
+      { "u_set_hp": 1, "target_part": "arm_l", "max": true },
+      { "math": [ "max_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "arm_l" },
+      { "math": [ "max_hp", "-=", "u_val('hp')" ] },
+      { "u_set_hp": { "math": [ "max_hp * _hp / 100" ] }, "target_part": "arm_l" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_set_hp_perc_arm_r",
+    "effect": [
+      { "u_set_hp": 1, "target_part": "arm_r", "max": true },
+      { "math": [ "max_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "arm_r" },
+      { "math": [ "max_hp", "-=", "u_val('hp')" ] },
+      { "u_set_hp": { "math": [ "max_hp * _hp / 100" ] }, "target_part": "arm_r" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_set_hp_perc_leg_l",
+    "effect": [
+      { "u_set_hp": 1, "target_part": "leg_l", "max": true },
+      { "math": [ "max_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "leg_l" },
+      { "math": [ "max_hp", "-=", "u_val('hp')" ] },
+      { "u_set_hp": { "math": [ "max_hp * _hp / 100" ] }, "target_part": "leg_l" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_set_hp_perc_leg_r",
+    "effect": [
+      { "u_set_hp": 1, "target_part": "leg_r", "max": true },
+      { "math": [ "max_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "leg_r" },
+      { "math": [ "max_hp", "-=", "u_val('hp')" ] },
+      { "u_set_hp": { "math": [ "max_hp * _hp / 100" ] }, "target_part": "leg_r" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_get_hp_rank_arm_l",
+    "effect": [
+      { "math": [ "cur_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "arm_l", "max": true },
+      { "math": [ "max_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "arm_l" },
+      { "math": [ "max_hp", "-=", "u_val('hp')" ] },
+      { "math": [ "cur_hp", "-=", "u_val('hp')" ] },
+      { "u_set_hp": { "math": [ "cur_hp" ] }, "target_part": "arm_l" },
+      { "math": [ "hp_rank", "=", "jmath_hp_rank(cur_hp/max_hp)" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_get_hp_rank_arm_r",
+    "effect": [
+      { "math": [ "cur_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "arm_r", "max": true },
+      { "math": [ "max_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "arm_r" },
+      { "math": [ "max_hp", "-=", "u_val('hp')" ] },
+      { "math": [ "cur_hp", "-=", "u_val('hp')" ] },
+      { "u_set_hp": { "math": [ "cur_hp" ] }, "target_part": "arm_r" },
+      { "math": [ "hp_rank", "=", "jmath_hp_rank(cur_hp/max_hp)" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_get_hp_rank_leg_l",
+    "effect": [
+      { "math": [ "cur_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "leg_l", "max": true },
+      { "math": [ "max_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "leg_l" },
+      { "math": [ "max_hp", "-=", "u_val('hp')" ] },
+      { "math": [ "cur_hp", "-=", "u_val('hp')" ] },
+      { "u_set_hp": { "math": [ "cur_hp" ] }, "target_part": "leg_l" },
+      { "math": [ "hp_rank", "=", "jmath_hp_rank(cur_hp/max_hp)" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_get_hp_rank_leg_r",
+    "effect": [
+      { "math": [ "cur_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "leg_r", "max": true },
+      { "math": [ "max_hp", "=", "u_val('hp') + 1" ] },
+      { "u_set_hp": 1, "target_part": "leg_r" },
+      { "math": [ "max_hp", "-=", "u_val('hp')" ] },
+      { "math": [ "cur_hp", "-=", "u_val('hp')" ] },
+      { "u_set_hp": { "math": [ "cur_hp" ] }, "target_part": "leg_r" },
+      { "math": [ "hp_rank", "=", "jmath_hp_rank(cur_hp/max_hp)" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_install_generic_arm_l",
+    "condition": { "and": [ { "u_has_flag": "LOSS_ARM_L" }, { "not": { "u_has_flag": "ROBOTIC_LIMB_ARM_L" } } ] },
+    "false_effect": [
+      { "u_message": "すでに対応する四肢が存在します。", "type": "info", "popup": true },
+      { "u_spawn_item": { "context_val": "item" }, "count": 1, "suppress_message": true }
+    ],
+    "effect": [
+      { "u_add_trait": { "context_val": "limb" } },
+      { "run_eoc_with": "EOC_RL_set_hp_perc_arm_l", "variables": { "hp": { "context_val": "hp" } } }
+    ]
+  }
+]

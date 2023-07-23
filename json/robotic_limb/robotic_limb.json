@@ -1,0 +1,200 @@
+[
+  {
+    "type": "mutation",
+    "id": "robotic_limb_arm_l",
+    "name": { "str": "ロボット義肢(左腕)" },
+    "points": 0,
+    "description": "義肢を装着しています。取り外すには変異メニューから無効化してください。",
+    "purifiable": false,
+    "active": true,
+    "starts_active": true,
+    "integrated_armor": [ "integrated_robotic_limb_arm_l" ],
+    "deactivated_eocs": [ "EOC_RL_uninstall_robotic_limb_arm_l" ],
+    "enchantments": [ "ench_robotic_limb_arm_l" ],
+    "flags": [ "ROBOTIC_LIMB_ARM_L" ],
+    "passive_mods": { "str_mod": 2 }
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_robotic_limb_arm_l",
+    "//": "ロボット義肢(左腕)",
+    "condition": "ALWAYS",
+    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
+    "ench_effects": [ { "effect": "effect_robotic_limb_arm", "intensity": 1 } ],
+    "modified_bodyparts": [ { "gain": "arm_l" }, { "gain": "hand_l" } ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "robotic_limb_arm_l",
+    "name": { "str": "ロボット義肢(左腕)", "str_pl": "ロボット義肢(左腕)" },
+    "description": "大変動以前の技術で作られたロボット義肢です。日常生活において本来の四肢とほとんど変わらない動きを可能とします。",
+    "copy-from": "rl_arm_base",
+    "material": [ "steel", "plastic" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_robotic_limb_arm_l",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_l",
+              "variables": { "item": "robotic_limb_arm_l", "limb": "robotic_limb_arm_l", "hp": "100" }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "robotic_limb_arm_r",
+    "name": { "str": "ロボット義肢(右腕)" },
+    "points": 0,
+    "description": "義肢を装着しています。取り外すには変異メニューから無効化してください。",
+    "purifiable": false,
+    "active": true,
+    "starts_active": true,
+    "integrated_armor": [ "integrated_robotic_limb_arm_r" ],
+    "deactivated_eocs": [ "EOC_RL_uninstall_robotic_limb_arm_r" ],
+    "enchantments": [ "ench_robotic_limb_arm_r" ],
+    "flags": [ "ROBOTIC_LIMB_ARM_R" ],
+    "passive_mods": { "str_mod": 2 }
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_robotic_limb_arm_r",
+    "//": "ロボット義肢(右腕)",
+    "condition": "ALWAYS",
+    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
+    "ench_effects": [ { "effect": "effect_robotic_limb_arm", "intensity": 1 } ],
+    "modified_bodyparts": [ { "gain": "arm_r" }, { "gain": "hand_r" } ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "robotic_limb_arm_r",
+    "name": { "str": "ロボット義肢(右腕)", "str_pl": "ロボット義肢(右腕)" },
+    "description": "大変動以前の技術で作られたロボット義肢です。日常生活において本来の四肢とほとんど変わらない動きを可能とします。",
+    "copy-from": "rl_arm_base",
+    "material": [ "steel", "plastic" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_robotic_limb_arm_r",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_arm_r",
+              "variables": { "item": "robotic_limb_arm_r", "limb": "robotic_limb_arm_r", "hp": "100" }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "robotic_limb_leg_l",
+    "name": { "str": "ロボット義肢(左脚)" },
+    "points": 0,
+    "description": "義肢を装着しています。取り外すには変異メニューから無効化してください。",
+    "purifiable": false,
+    "active": true,
+    "starts_active": true,
+    "integrated_armor": [ "integrated_robotic_limb_leg_l" ],
+    "deactivated_eocs": [ "EOC_RL_uninstall_robotic_limb_leg_l" ],
+    "enchantments": [ "ench_robotic_limb_leg_l" ],
+    "flags": [ "ROBOTIC_LIMB_LEG_L" ],
+    "passive_mods": { "dex_mod": 2 }
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_robotic_limb_leg_l",
+    "//": "ロボット義肢(左脚)",
+    "condition": "ALWAYS",
+    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
+    "ench_effects": [ { "effect": "effect_robotic_limb_leg", "intensity": 1 } ],
+    "modified_bodyparts": [ { "gain": "leg_l" }, { "gain": "foot_l" } ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "robotic_limb_leg_l",
+    "name": { "str": "ロボット義肢(左脚)", "str_pl": "ロボット義肢(左脚)" },
+    "description": "大変動以前の技術で作られたロボット義肢です。日常生活において本来の四肢とほとんど変わらない動きを可能とします。",
+    "copy-from": "rl_arm_base",
+    "material": [ "steel", "plastic" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_robotic_limb_leg_l",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_l",
+              "variables": { "item": "robotic_limb_leg_l", "limb": "robotic_limb_leg_l", "hp": "100" }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "robotic_limb_leg_r",
+    "name": { "str": "ロボット義肢(右脚)" },
+    "points": 0,
+    "description": "義肢を装着しています。取り外すには変異メニューから無効化してください。",
+    "purifiable": false,
+    "active": true,
+    "starts_active": true,
+    "integrated_armor": [ "integrated_robotic_limb_leg_r" ],
+    "deactivated_eocs": [ "EOC_RL_uninstall_robotic_limb_leg_r" ],
+    "enchantments": [ "ench_robotic_limb_leg_r" ],
+    "flags": [ "ROBOTIC_LIMB_LEG_R" ],
+    "passive_mods": { "dex_mod": 2 }
+  },
+  {
+    "type": "enchantment",
+    "id": "ench_robotic_limb_leg_r",
+    "//": "ロボット義肢(右脚)",
+    "condition": "ALWAYS",
+    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
+    "ench_effects": [ { "effect": "effect_robotic_limb_leg", "intensity": 1 } ],
+    "modified_bodyparts": [ { "gain": "leg_r" }, { "gain": "foot_r" } ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "robotic_limb_leg_r",
+    "name": { "str": "ロボット義肢(右脚)", "str_pl": "ロボット義肢(右脚)" },
+    "description": "大変動以前の技術で作られたロボット義肢です。日常生活において本来の四肢とほとんど変わらない動きを可能とします。",
+    "copy-from": "rl_arm_base",
+    "material": [ "steel", "plastic" ],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "装着する",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_RL_install_robotic_limb_leg_r",
+          "effect": [
+            {
+              "run_eoc_with": "EOC_RL_install_generic_leg_r",
+              "variables": { "item": "robotic_limb_leg_r", "limb": "robotic_limb_leg_r", "hp": "100" }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ig_robotic_limb",
+    "type": "item_group",
+    "items": [
+      [ "robotic_limb_arm_l", 10 ],
+      [ "robotic_limb_arm_r", 10 ],
+      [ "robotic_limb_leg_l", 10 ],
+      [ "robotic_limb_leg_r", 10 ]
+    ]
+  }
+]

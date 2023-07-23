@@ -1,0 +1,89 @@
+[
+  {
+    "id": "effect_wooden_limb_arm",
+    "type": "effect_type",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
+    "limb_score_mods": [
+      { "limb_score": "manip", "modifier": 0.75, "scaling": -0.25 },
+      { "limb_score": "lift", "modifier": 0.95, "scaling": -0.05 },
+      { "limb_score": "balance", "modifier": 0.95, "scaling": -0.05 },
+      { "limb_score": "block", "modifier": 0.95, "scaling": -0.05 },
+      { "limb_score": "swim", "modifier": 0.75, "scaling": -0.25 },
+      { "limb_score": "crawl", "modifier": 0.75, "scaling": -0.25 },
+      { "limb_score": "grip", "modifier": 0.95, "scaling": -0.05 }
+    ]
+  },
+  {
+    "id": "effect_wooden_limb_leg",
+    "type": "effect_type",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
+    "limb_score_mods": [
+      { "limb_score": "manip", "modifier": 0.75, "scaling": -0.25 },
+      { "limb_score": "move_speed", "modifier": 0.95, "scaling": -0.05 },
+      { "limb_score": "block", "modifier": 0.95, "scaling": -0.05 },
+      { "limb_score": "swim", "modifier": 0.75, "scaling": -0.25 },
+      { "limb_score": "crawl", "modifier": 0.75, "scaling": -0.25 },
+      { "limb_score": "footing", "modifier": 0.95, "scaling": -0.05 }
+    ]
+  },
+  {
+    "id": "integrated_wooden_limb_arm_l",
+    "type": "ARMOR",
+    "name": { "str": "木製義肢(左腕)" },
+    "copy-from": "rl_integrated_arm_base",
+    "armor": [
+      {
+        "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "hand_l", "hand_r", "arm_l", "arm_r" ],
+        "coverage": 100,
+        "encumbrance": 5
+      }
+    ]
+  },
+  {
+    "id": "integrated_wooden_limb_arm_r",
+    "type": "ARMOR",
+    "name": { "str": "木製義肢(右腕)" },
+    "copy-from": "rl_integrated_arm_base",
+    "armor": [
+      {
+        "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "hand_l", "hand_r", "arm_l", "arm_r" ],
+        "coverage": 100,
+        "encumbrance": 5
+      }
+    ]
+  },
+  {
+    "id": "integrated_wooden_limb_leg_l",
+    "type": "ARMOR",
+    "name": { "str": "木製義肢(左脚)" },
+    "copy-from": "rl_integrated_leg_base",
+    "armor": [
+      {
+        "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "hand_l", "hand_r", "arm_l", "arm_r" ],
+        "coverage": 100,
+        "encumbrance": 5
+      }
+    ]
+  },
+  {
+    "id": "integrated_wooden_limb_leg_r",
+    "type": "ARMOR",
+    "name": { "str": "木製義肢(右脚)" },
+    "copy-from": "rl_integrated_leg_base",
+    "armor": [
+      {
+        "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "hand_l", "hand_r", "arm_l", "arm_r" ],
+        "coverage": 100,
+        "encumbrance": 5
+      }
+    ]
+  }
+]

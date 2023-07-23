@@ -1,0 +1,31 @@
+[
+  {
+    "id": "elecsto_homapl",
+    "type": "item_group",
+    "//": "For s_electronics shops",
+    "copy-from": "elecsto_homapl",
+    "extend": { "items": [ { "group": "robotic_limb_tier_1", "prob": 20 }, { "group": "robotic_limb_tier_2", "prob": 10 } ] }
+  },
+  {
+    "id": "hospital_bed",
+    "type": "item_group",
+    "copy-from": "hospital_bed",
+    "extend": { "items": [ { "group": "robotic_limb_tier_1", "prob": 20 }, { "group": "robotic_limb_tier_2", "prob": 5 } ] }
+  },
+  {
+    "id": "tools_medical",
+    "type": "item_group",
+    "copy-from": "tools_medical",
+    "extend": { "items": [ { "group": "robotic_limb_tier_1", "prob": 20 }, { "group": "robotic_limb_tier_2", "prob": 20 } ] }
+  },
+  {
+    "id": "robotic_limb_tier_1",
+    "type": "item_group",
+    "items": [ { "group": "ig_lesser_robotic_limb", "prob": 20 }, { "group": "ig_wooden_limb", "prob": 10 } ]
+  },
+  {
+    "id": "robotic_limb_tier_2",
+    "type": "item_group",
+    "items": [ { "group": "ig_robotic_limb", "prob": 30 }, { "group": "ig_enforced_robotic_limb", "prob": 10 } ]
+  }
+]

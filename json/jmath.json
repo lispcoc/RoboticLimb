@@ -1,0 +1,15 @@
+[
+  {
+    "type": "jmath_function",
+    "id": "jmath_hp_rank",
+    "num_args": 1,
+    "return": "_0 >= 1 ? 4 : _0 >= 0.75 ? 3 :_0 >= 0.5 ? 2 :_0 >= 0.25 ? 1 : 0"
+  },
+  {
+    "type": "jmath_function",
+    "id": "defect_check",
+    "num_args": 1,
+    "//": "_0 = damage",
+    "return": "(_0) < rand(100) ? 1 : 0"
+  }
+]
