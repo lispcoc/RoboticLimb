@@ -4,6 +4,8 @@
     "type": "effect_type",
     "name": [ "" ],
     "desc": [ "" ],
+    "base_mods": { "str_mod": [ 3 ] },
+    "scaling_mods": { "str_mod": [ 3 ] },
     "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
     "limb_score_mods": [
       { "limb_score": "manip", "modifier": 1.05, "scaling": 0.05 },
@@ -20,6 +22,8 @@
     "type": "effect_type",
     "name": [ "" ],
     "desc": [ "" ],
+    "base_mods": { "dex_mod": [ 3 ] },
+    "scaling_mods": { "dex_mod": [ 3 ] },
     "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
     "limb_score_mods": [
       { "limb_score": "manip", "modifier": 1.05, "scaling": 0.05 },

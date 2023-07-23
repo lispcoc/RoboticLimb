@@ -11,8 +11,7 @@
     "integrated_armor": [ "integrated_enforced_robotic_limb_arm_l" ],
     "deactivated_eocs": [ "EOC_RL_uninstall_enforced_robotic_limb_arm_l" ],
     "enchantments": [ "ench_enforced_robotic_limb_arm_l" ],
-    "flags": [ "ROBOTIC_LIMB_ARM_L" ],
-    "passive_mods": { "str_mod": 3 }
+    "flags": [ "ROBOTIC_LIMB_ARM_L" ]
   },
   {
     "type": "enchantment",
@@ -58,8 +57,7 @@
     "integrated_armor": [ "integrated_enforced_robotic_limb_arm_r" ],
     "deactivated_eocs": [ "EOC_RL_uninstall_enforced_robotic_limb_arm_r" ],
     "enchantments": [ "ench_enforced_robotic_limb_arm_r" ],
-    "flags": [ "ROBOTIC_LIMB_ARM_R" ],
-    "passive_mods": { "str_mod": 3 }
+    "flags": [ "ROBOTIC_LIMB_ARM_R" ]
   },
   {
     "type": "enchantment",
@@ -105,8 +103,7 @@
     "integrated_armor": [ "integrated_enforced_robotic_limb_leg_l" ],
     "deactivated_eocs": [ "EOC_RL_uninstall_enforced_robotic_limb_leg_l" ],
     "enchantments": [ "ench_enforced_robotic_limb_leg_l" ],
-    "flags": [ "ROBOTIC_LIMB_LEG_L" ],
-    "passive_mods": { "dex_mod": 3 }
+    "flags": [ "ROBOTIC_LIMB_LEG_L" ]
   },
   {
     "type": "enchantment",
@@ -152,8 +149,7 @@
     "integrated_armor": [ "integrated_enforced_robotic_limb_leg_r" ],
     "deactivated_eocs": [ "EOC_RL_uninstall_enforced_robotic_limb_leg_r" ],
     "enchantments": [ "ench_enforced_robotic_limb_leg_r" ],
-    "flags": [ "ROBOTIC_LIMB_LEG_R" ],
-    "passive_mods": { "dex_mod": 3 }
+    "flags": [ "ROBOTIC_LIMB_LEG_R" ]
   },
   {
     "type": "enchantment",

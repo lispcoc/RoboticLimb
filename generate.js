@@ -25,16 +25,8 @@ const target_grade = [
             }
         ],
         override_arm: [
-            {
-                type: "mutation",
-                passive_mods: {"str_mod": 2},
-            }
         ],
         override_leg: [
-            {
-                type: "mutation",
-                passive_mods: {"dex_mod": 2},
-            }
         ],
     },
     {
@@ -48,16 +40,8 @@ const target_grade = [
             }
         ],
         override_arm: [
-            {
-                type: "mutation",
-                passive_mods: {"str_mod": 2},
-            }
         ],
         override_leg: [
-            {
-                type: "mutation",
-                passive_mods: {"dex_mod": 2},
-            }
         ],
     },
     {
@@ -71,16 +55,8 @@ const target_grade = [
             }
         ],
         override_arm: [
-            {
-                type: "mutation",
-                passive_mods: {"str_mod": 1},
-            }
         ],
         override_leg: [
-            {
-                type: "mutation",
-                passive_mods: {"dex_mod": 1},
-            }
         ],
     },
     {
@@ -94,16 +70,8 @@ const target_grade = [
             }
         ],
         override_arm: [
-            {
-                type: "mutation",
-                passive_mods: {"str_mod": 3},
-            }
         ],
         override_leg: [
-            {
-                type: "mutation",
-                passive_mods: {"dex_mod": 3},
-            }
         ],
     }
 ]
