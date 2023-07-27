@@ -1,106 +1,10 @@
 [
   {
-    "abstract": "rl_arm_base",
-    "type": "GENERIC",
-    "name": { "str": "義肢(腕ベース)", "str_pl": "義肢(腕ベース)" },
-    "description": "義肢のベースデータです。",
-    "symbol": "M",
-    "color": "light_gray",
-    "weight": "5 kg",
-    "volume": "5 L",
-    "price": 100000,
-    "price_postapoc": 100000,
-    "material": [ "steel", "plastic" ],
-    "category": "spare_parts",
-    "flags": [ "SINGLE_USE" ]
-  },
-  {
-    "id": "rl_integrated_arm_base",
-    "type": "ARMOR",
-    "category": "armor",
-    "name": { "str": "義肢" },
-    "description": "義肢のベースデータです。",
-    "weight": "5 kg",
-    "volume": "5 L",
-    "price": 0,
-    "price_postapoc": 0,
-    "material": [ "steel", "plastic" ],
-    "symbol": "x",
-    "color": "green",
-    "warmth": 0,
-    "environmental_protection": 4,
-    "flags": [ "INTEGRATED", "ALLOWS_NATURAL_ATTACKS", "UNBREAKABLE", "SKINTIGHT", "PADDED", "PERSONAL", "NO_SALVAGE" ],
-    "armor": [
-      {
-        "material": [ { "type": "steel", "covered_by_mat": 100, "thickness": 2.5 } ],
-        "covers": [ "hand_l", "hand_r", "arm_l", "arm_r" ],
-        "coverage": 100,
-        "encumbrance": 5
-      }
-    ]
-  },
-  {
-    "id": "rl_integrated_leg_base",
-    "type": "ARMOR",
-    "category": "armor",
-    "name": { "str": "義肢" },
-    "description": "義肢のベースデータです。",
-    "weight": "5 kg",
-    "volume": "5 L",
-    "price": 0,
-    "price_postapoc": 0,
-    "material": [ "steel", "plastic" ],
-    "symbol": "x",
-    "color": "green",
-    "warmth": 0,
-    "environmental_protection": 4,
-    "flags": [ "INTEGRATED", "ALLOWS_NATURAL_ATTACKS", "UNBREAKABLE", "SKINTIGHT", "PADDED", "PERSONAL", "TOUGH_FEET", "NO_SALVAGE" ],
-    "armor": [
-      {
-        "material": [ { "type": "steel", "covered_by_mat": 100, "thickness": 2.5 } ],
-        "covers": [ "foot_l", "foot_r", "leg_l", "leg_r" ],
-        "coverage": 100,
-        "encumbrance": 5
-      }
-    ]
-  },
-  {
-    "id": "rl_effect_arm_base",
-    "type": "effect_type",
-    "name": [ "義肢(腕ベース)" ],
-    "desc": [ "義肢のベースデータです。" ],
-    "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
-    "limb_score_mods": [
-      { "limb_score": "manip", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "lift", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "balance", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "block", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "swim", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "crawl", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "grip", "modifier": 0.95, "scaling": -0.05 }
-    ]
-  },
-  {
-    "id": "rl_effect_leg_base",
-    "type": "effect_type",
-    "name": [ "義肢(脚ベース)" ],
-    "desc": [ "義肢のベースデータです。" ],
-    "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
-    "limb_score_mods": [
-      { "limb_score": "manip", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "move_speed", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "block", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "swim", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "crawl", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "footing", "modifier": 0.95, "scaling": -0.05 }
-    ]
-  },
-  {
-    "id": "rl_bp_arm_l",
+    "id": "bp_wooden_limb_arm_l",
     "type": "body_part",
-    "main_part": "rl_bp_arm_l",
-    "opposite_part": "rl_bp_arm_r",
-    "limb_scores": [ [ "manip", 0.1, 0.2 ], [ "lift", 0.5 ], [ "balance", 0.15 ], [ "block", 1.0 ], [ "swim", 0.1 ], [ "crawl", 0.3 ] ],
+    "main_part": "bp_wooden_limb_arm_l",
+    "opposite_part": "bp_wooden_limb_arm_r",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "lift", 0.45 ], [ "balance", 0.14 ], [ "block", 0.9 ], [ "swim", 0.05 ], [ "crawl", 0.15 ] ],
     "base_hp": 60,
     "encumbrance_threshold": 5,
     "//": "ここから下は共通",
@@ -157,11 +61,11 @@
     "sub_parts": [ "arm_shoulder_l", "arm_upper_l", "arm_elbow_l", "arm_lower_l" ]
   },
   {
-    "id": "rl_bp_arm_r",
+    "id": "bp_wooden_limb_arm_r",
     "type": "body_part",
-    "main_part": "rl_bp_arm_r",
-    "opposite_part": "rl_bp_arm_l",
-    "limb_scores": [ [ "manip", 0.1, 0.2 ], [ "lift", 0.5 ], [ "balance", 0.15 ], [ "block", 1.0 ], [ "swim", 0.1 ], [ "crawl", 0.3 ] ],
+    "main_part": "bp_wooden_limb_arm_r",
+    "opposite_part": "bp_wooden_limb_arm_l",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "lift", 0.45 ], [ "balance", 0.14 ], [ "block", 0.9 ], [ "swim", 0.05 ], [ "crawl", 0.15 ] ],
     "base_hp": 60,
     "encumbrance_threshold": 5,
     "//": "ここから下は共通",
@@ -218,11 +122,11 @@
     "sub_parts": [ "arm_shoulder_r", "arm_upper_r", "arm_elbow_r", "arm_lower_r" ]
   },
   {
-    "id": "rl_bp_hand_l",
+    "id": "bp_wooden_limb_hand_l",
     "type": "body_part",
-    "main_part": "rl_bp_arm_l",
-    "opposite_part": "rl_bp_hand_r",
-    "limb_scores": [ [ "grip", 0.5 ], [ "manip", 0.5, 1.0 ], [ "swim", 0.15 ] ],
+    "main_part": "bp_wooden_limb_arm_l",
+    "opposite_part": "bp_wooden_limb_hand_r",
+    "limb_scores": [ [ "grip", 0.45 ], [ "manip", 0.45, 0.5 ], [ "swim", 0.075 ] ],
     "base_hp": 60,
     "encumbrance_threshold": 5,
     "//": "ここから下は共通",
@@ -254,11 +158,11 @@
     "bmi_encumbrance_scalar": 0.15
   },
   {
-    "id": "rl_bp_hand_r",
+    "id": "bp_wooden_limb_hand_r",
     "type": "body_part",
-    "main_part": "rl_bp_arm_r",
-    "opposite_part": "rl_bp_hand_l",
-    "limb_scores": [ [ "grip", 0.5 ], [ "manip", 0.5, 1.0 ], [ "swim", 0.15 ] ],
+    "main_part": "bp_wooden_limb_arm_r",
+    "opposite_part": "bp_wooden_limb_hand_l",
+    "limb_scores": [ [ "grip", 0.45 ], [ "manip", 0.45, 0.5 ], [ "swim", 0.075 ] ],
     "base_hp": 60,
     "encumbrance_threshold": 5,
     "//": "ここから下は共通",
@@ -290,11 +194,11 @@
     "bmi_encumbrance_scalar": 0.15
   },
   {
-    "id": "rl_bp_leg_l",
+    "id": "bp_wooden_limb_leg_l",
     "type": "body_part",
-    "main_part": "rl_bp_leg_l",
-    "opposite_part": "rl_bp_leg_r",
-    "limb_scores": [ [ "manip", 0.1, 0.2 ], [ "move_speed", 0.5 ], [ "swim", 0.15 ], [ "block", 1 ], [ "crawl", 0.2 ] ],
+    "main_part": "bp_wooden_limb_leg_l",
+    "opposite_part": "bp_wooden_limb_leg_r",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "move_speed", 0.45 ], [ "swim", 0.075 ], [ "block", 0.9 ], [ "crawl", 0.1 ] ],
     "base_hp": 60,
     "encumbrance_threshold": 6,
     "//": "ここから下は共通",
@@ -359,11 +263,11 @@
     "bmi_encumbrance_scalar": 0.7
   },
   {
-    "id": "rl_bp_leg_r",
+    "id": "bp_wooden_limb_leg_r",
     "type": "body_part",
-    "main_part": "rl_bp_leg_r",
-    "opposite_part": "rl_bp_leg_l",
-    "limb_scores": [ [ "manip", 0.1, 0.2 ], [ "move_speed", 0.5 ], [ "swim", 0.15 ], [ "block", 1 ], [ "crawl", 0.2 ] ],
+    "main_part": "bp_wooden_limb_leg_r",
+    "opposite_part": "bp_wooden_limb_leg_l",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "move_speed", 0.45 ], [ "swim", 0.075 ], [ "block", 0.9 ], [ "crawl", 0.1 ] ],
     "base_hp": 60,
     "encumbrance_threshold": 6,
     "//": "ここから下は共通",
@@ -428,11 +332,11 @@
     "bmi_encumbrance_scalar": 0.7
   },
   {
-    "id": "rl_bp_foot_l",
+    "id": "bp_wooden_limb_foot_l",
     "type": "body_part",
-    "main_part": "rl_bp_leg_l",
-    "opposite_part": "rl_bp_foot_r",
-    "limb_scores": [ [ "manip", 0.1, 0.2 ], [ "footing", 0.5 ], [ "swim", 0.1 ] ],
+    "main_part": "bp_wooden_limb_leg_l",
+    "opposite_part": "bp_wooden_limb_foot_r",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "footing", 0.45 ], [ "swim", 0.05 ] ],
     "base_hp": 60,
     "encumbrance_threshold": 5,
     "//": "ここから下は共通",
@@ -461,11 +365,11 @@
     "bmi_encumbrance_scalar": 0.15
   },
   {
-    "id": "rl_bp_foot_r",
+    "id": "bp_wooden_limb_foot_r",
     "type": "body_part",
-    "main_part": "rl_bp_leg_r",
-    "opposite_part": "rl_bp_foot_l",
-    "limb_scores": [ [ "manip", 0.1, 0.2 ], [ "footing", 0.5 ], [ "swim", 0.1 ] ],
+    "main_part": "bp_wooden_limb_leg_r",
+    "opposite_part": "bp_wooden_limb_foot_l",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "footing", 0.45 ], [ "swim", 0.05 ] ],
     "base_hp": 60,
     "encumbrance_threshold": 5,
     "//": "ここから下は共通",
