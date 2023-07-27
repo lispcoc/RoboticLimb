@@ -5,17 +5,7 @@
     "name": [ "" ],
     "desc": [ "" ],
     "base_mods": { "str_mod": [ 1 ] },
-    "scaling_mods": { "str_mod": [ 1 ] },
-    "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
-    "limb_score_mods": [
-      { "limb_score": "manip", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "lift", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "balance", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "block", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "swim", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "crawl", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "grip", "modifier": 0.95, "scaling": -0.05 }
-    ]
+    "scaling_mods": { "str_mod": [ 1 ] }
   },
   {
     "id": "effect_wooden_limb_leg",
@@ -23,16 +13,95 @@
     "name": [ "" ],
     "desc": [ "" ],
     "base_mods": { "dex_mod": [ 1 ] },
-    "scaling_mods": { "dex_mod": [ 1 ] },
-    "flags": [ "EFFECT_LIMB_SCORE_MOD" ],
-    "limb_score_mods": [
-      { "limb_score": "manip", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "move_speed", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "block", "modifier": 0.95, "scaling": -0.05 },
-      { "limb_score": "swim", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "crawl", "modifier": 0.75, "scaling": -0.25 },
-      { "limb_score": "footing", "modifier": 0.95, "scaling": -0.05 }
-    ]
+    "scaling_mods": { "dex_mod": [ 1 ] }
+  },
+  {
+    "id": "bp_wooden_limb_arm_l",
+    "type": "body_part",
+    "copy-from": "rl_bp_arm_l",
+    "name": "木製義肢(左腕)",
+    "main_part": "bp_wooden_limb_arm_l",
+    "opposite_part": "bp_wooden_limb_arm_r",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "lift", 0.45 ], [ "balance", 0.14 ], [ "block", 0.9 ], [ "swim", 0.05 ], [ "crawl", 0.15 ] ],
+    "base_hp": 60,
+    "encumbrance_threshold": 5
+  },
+  {
+    "id": "bp_wooden_limb_arm_r",
+    "type": "body_part",
+    "copy-from": "rl_bp_arm_r",
+    "name": "木製義肢(右腕)",
+    "main_part": "bp_wooden_limb_arm_r",
+    "opposite_part": "bp_wooden_limb_arm_l",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "lift", 0.45 ], [ "balance", 0.14 ], [ "block", 0.9 ], [ "swim", 0.05 ], [ "crawl", 0.15 ] ],
+    "base_hp": 60,
+    "encumbrance_threshold": 5
+  },
+  {
+    "id": "bp_wooden_limb_hand_l",
+    "type": "body_part",
+    "copy-from": "rl_bp_hand_l",
+    "name": "木製義肢(左手)",
+    "main_part": "bp_wooden_limb_hand_l",
+    "opposite_part": "bp_wooden_limb_hand_r",
+    "limb_scores": [ [ "grip", 0.45 ], [ "manip", 0.45, 0.5 ], [ "swim", 0.075 ] ],
+    "base_hp": 60,
+    "encumbrance_threshold": 5
+  },
+  {
+    "id": "bp_wooden_limb_hand_r",
+    "type": "body_part",
+    "copy-from": "rl_bp_hand_r",
+    "name": "木製義肢(右手)",
+    "main_part": "bp_wooden_limb_hand_r",
+    "opposite_part": "bp_wooden_limb_hand_l",
+    "limb_scores": [ [ "grip", 0.45 ], [ "manip", 0.45, 0.5 ], [ "swim", 0.075 ] ],
+    "base_hp": 60,
+    "encumbrance_threshold": 5
+  },
+  {
+    "id": "bp_wooden_limb_leg_l",
+    "type": "body_part",
+    "copy-from": "rl_bp_leg_l",
+    "name": "木製義肢(左脚)",
+    "main_part": "bp_wooden_limb_leg_l",
+    "opposite_part": "bp_wooden_limb_leg_r",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "move_speed", 0.45 ], [ "swim", 0.075 ], [ "block", 0.9 ], [ "crawl", 0.1 ] ],
+    "base_hp": 60,
+    "encumbrance_threshold": 6
+  },
+  {
+    "id": "bp_wooden_limb_leg_r",
+    "type": "body_part",
+    "copy-from": "rl_bp_leg_r",
+    "name": "木製義肢(右脚)",
+    "main_part": "bp_wooden_limb_leg_r",
+    "opposite_part": "bp_wooden_limb_leg_l",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "move_speed", 0.45 ], [ "swim", 0.075 ], [ "block", 0.9 ], [ "crawl", 0.1 ] ],
+    "base_hp": 60,
+    "encumbrance_threshold": 6
+  },
+  {
+    "id": "bp_wooden_limb_foot_l",
+    "type": "body_part",
+    "copy-from": "rl_bp_foot_l",
+    "name": "木製義肢(左足)",
+    "main_part": "bp_wooden_limb_foot_l",
+    "opposite_part": "bp_wooden_limb_foot_r",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "footing", 0.45 ], [ "swim", 0.05 ] ],
+    "base_hp": 60,
+    "encumbrance_threshold": 5
+  },
+  {
+    "id": "bp_wooden_limb_foot_r",
+    "type": "body_part",
+    "copy-from": "rl_bp_foot_r",
+    "name": "木製義肢(右足)",
+    "main_part": "bp_wooden_limb_foot_r",
+    "opposite_part": "bp_wooden_limb_foot_l",
+    "limb_scores": [ [ "manip", 0.05, 0.1 ], [ "footing", 0.45 ], [ "swim", 0.05 ] ],
+    "base_hp": 60,
+    "encumbrance_threshold": 5
   },
   {
     "id": "integrated_wooden_limb_arm_l",

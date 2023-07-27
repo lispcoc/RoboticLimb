@@ -18,9 +18,8 @@
     "id": "ench_robotic_limb_arm_l",
     "//": "ロボット義肢(左腕)",
     "condition": "ALWAYS",
-    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
     "ench_effects": [ { "effect": "effect_robotic_limb_armset", "intensity": 1 } ],
-    "modified_bodyparts": [ { "gain": "arm_l" }, { "gain": "hand_l" } ]
+    "modified_bodyparts": [ { "gain": "bp_robotic_limb_arm_l" }, { "gain": "bp_robotic_limb_hand_l" } ]
   },
   {
     "type": "GENERIC",

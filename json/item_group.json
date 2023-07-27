@@ -21,11 +21,13 @@
   {
     "id": "robotic_limb_tier_1",
     "type": "item_group",
+    "subtype": "distribution",
     "items": [ { "group": "ig_lesser_robotic_limb", "prob": 20 }, { "group": "ig_wooden_limb", "prob": 10 } ]
   },
   {
     "id": "robotic_limb_tier_2",
     "type": "item_group",
+    "subtype": "distribution",
     "items": [ { "group": "ig_robotic_limb", "prob": 30 }, { "group": "ig_enforced_robotic_limb", "prob": 10 } ]
   }
 ]

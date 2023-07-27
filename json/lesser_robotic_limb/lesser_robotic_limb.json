@@ -18,9 +18,8 @@
     "id": "ench_lesser_robotic_limb_arm_l",
     "//": "廉価ロボット義肢(左腕)",
     "condition": "ALWAYS",
-    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
     "ench_effects": [ { "effect": "effect_lesser_robotic_limb_arm", "intensity": 1 } ],
-    "modified_bodyparts": [ { "gain": "arm_l" }, { "gain": "hand_l" } ]
+    "modified_bodyparts": [ { "gain": "bp_lesser_robotic_limb_arm_l" }, { "gain": "bp_lesser_robotic_limb_hand_l" } ]
   },
   {
     "type": "GENERIC",
@@ -64,9 +63,8 @@
     "id": "ench_lesser_robotic_limb_arm_r",
     "//": "廉価ロボット義肢(右腕)",
     "condition": "ALWAYS",
-    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
     "ench_effects": [ { "effect": "effect_lesser_robotic_limb_arm", "intensity": 1 } ],
-    "modified_bodyparts": [ { "gain": "arm_r" }, { "gain": "hand_r" } ]
+    "modified_bodyparts": [ { "gain": "bp_lesser_robotic_limb_arm_r" }, { "gain": "bp_lesser_robotic_limb_hand_r" } ]
   },
   {
     "type": "GENERIC",
@@ -110,9 +108,8 @@
     "id": "ench_lesser_robotic_limb_leg_l",
     "//": "廉価ロボット義肢(左脚)",
     "condition": "ALWAYS",
-    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
     "ench_effects": [ { "effect": "effect_lesser_robotic_limb_leg", "intensity": 1 } ],
-    "modified_bodyparts": [ { "gain": "leg_l" }, { "gain": "foot_l" } ]
+    "modified_bodyparts": [ { "gain": "bp_lesser_robotic_limb_leg_l" }, { "gain": "bp_lesser_robotic_limb_foot_l" } ]
   },
   {
     "type": "GENERIC",
@@ -156,9 +153,8 @@
     "id": "ench_lesser_robotic_limb_leg_r",
     "//": "廉価ロボット義肢(右脚)",
     "condition": "ALWAYS",
-    "values": [ { "value": "REGEN_HP", "multiply": -1 } ],
     "ench_effects": [ { "effect": "effect_lesser_robotic_limb_leg", "intensity": 1 } ],
-    "modified_bodyparts": [ { "gain": "leg_r" }, { "gain": "foot_r" } ]
+    "modified_bodyparts": [ { "gain": "bp_lesser_robotic_limb_leg_r" }, { "gain": "bp_lesser_robotic_limb_foot_r" } ]
   },
   {
     "type": "GENERIC",
