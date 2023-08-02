@@ -1,0 +1,91 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "rl_repair_kit",
+    "name": { "str": "義肢修理キット", "str_pl": "義肢修理キット" },
+    "description": "義肢修理キット",
+    "copy-from": "rl_arm_base",
+    "material": [ "steel", "plastic" ],
+    "flags": [  ],
+    "use_action": { "type": "effect_on_conditions", "description": "修理する", "effect_on_conditions": [ "EOC_RL_repair_kit" ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_repair_kit",
+    "effect": [
+      {
+        "run_eoc_selector": [
+          "EOC_RL_repair_kit_arm_l",
+          "EOC_RL_repair_kit_arm_r",
+          "EOC_RL_repair_kit_leg_l",
+          "EOC_RL_repair_kit_leg_r",
+          "EOC_RL_repair_kit_none"
+        ],
+        "title": "どの義肢を修理しますか?",
+        "names": [ "左腕", "右腕", "左脚", "右脚", "取消" ],
+        "keys": [ "a", "b", "c", "d", "e" ],
+        "hide_failing": true
+      }
+    ]
+  },
+  {
+    "id": "effect_rl_repair_kit",
+    "type": "effect_type",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "base_mods": { "healing_rate": [ 100 ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_repair_kit_completion",
+    "effect": [
+      {
+        "queue_eocs": [
+          "EOC_RL_repair_kit_internal"
+        ],
+        "time_in_future": 0
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_repair_kit_do_turn",
+    "effect": [
+      { "u_message": "do turn", "type": "info" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_repair_kit_internal",
+    "effect": [ { "u_assign_activity": "act_rl_repair_kit", "duration": "10 minutes" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_repair_kit_arm_l",
+    "condition": { "and": [ { "not": { "u_has_hp": { "math": [ "u_hp_max('arm_l')" ] }, "bodypart": "arm_l" } }, { "u_has_flag": "ROBOTIC_LIMB_ARM_L" } ] },
+    "effect": [ { "run_eoc_with": "EOC_RL_repair_kit_internal" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_repair_kit_arm_r",
+    "condition": { "and": [ { "not": { "u_has_hp": { "math": [ "u_hp_max('arm_r')" ] }, "bodypart": "arm_r" } }, { "u_has_flag": "ROBOTIC_LIMB_ARM_R" } ] },
+    "effect": [ { "run_eoc_with": "EOC_RL_repair_kit_internal" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_repair_kit_leg_l",
+    "condition": { "and": [ { "not": { "u_has_hp": { "math": [ "u_hp_max('leg_l')" ] }, "bodypart": "leg_l" } }, { "u_has_flag": "ROBOTIC_LIMB_LEG_L" } ] },
+    "effect": [ { "run_eoc_with": "EOC_RL_repair_kit_internal" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_repair_kit_leg_r",
+    "condition": { "and": [ { "not": { "u_has_hp": { "math": [ "u_hp_max('leg_r')" ] }, "bodypart": "leg_r" } }, { "u_has_flag": "ROBOTIC_LIMB_LEG_R" } ] },
+    "effect": [ { "run_eoc_with": "EOC_RL_repair_kit_internal" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_repair_kit_none",
+    "effect": [  ]
+  }
+]

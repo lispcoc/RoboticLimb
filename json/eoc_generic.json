@@ -111,5 +111,44 @@
       { "u_add_trait": { "context_val": "limb" } },
       { "run_eoc_with": "EOC_RL_set_hp_perc_arm_l", "variables": { "hp": { "context_val": "hp" } } }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_install_generic_arm_r",
+    "condition": { "and": [ { "u_has_flag": "LOSS_ARM_R" }, { "not": { "u_has_flag": "ROBOTIC_LIMB_ARM_R" } } ] },
+    "false_effect": [
+      { "u_message": "すでに対応する四肢が存在します。", "type": "info", "popup": true },
+      { "u_spawn_item": { "context_val": "item" }, "count": 1, "suppress_message": true }
+    ],
+    "effect": [
+      { "u_add_trait": { "context_val": "limb" } },
+      { "run_eoc_with": "EOC_RL_set_hp_perc_arm_r", "variables": { "hp": { "context_val": "hp" } } }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_install_generic_leg_l",
+    "condition": { "and": [ { "u_has_flag": "LOSS_LEG_L" }, { "not": { "u_has_flag": "ROBOTIC_LIMB_LEG_L" } } ] },
+    "false_effect": [
+      { "u_message": "すでに対応する四肢が存在します。", "type": "info", "popup": true },
+      { "u_spawn_item": { "context_val": "item" }, "count": 1, "suppress_message": true }
+    ],
+    "effect": [
+      { "u_add_trait": { "context_val": "limb" } },
+      { "run_eoc_with": "EOC_RL_set_hp_perc_leg_l", "variables": { "hp": { "context_val": "hp" } } }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RL_install_generic_leg_r",
+    "condition": { "and": [ { "u_has_flag": "LOSS_LEG_R" }, { "not": { "u_has_flag": "ROBOTIC_LIMB_LEG_R" } } ] },
+    "false_effect": [
+      { "u_message": "すでに対応する四肢が存在します。", "type": "info", "popup": true },
+      { "u_spawn_item": { "context_val": "item" }, "count": 1, "suppress_message": true }
+    ],
+    "effect": [
+      { "u_add_trait": { "context_val": "limb" } },
+      { "run_eoc_with": "EOC_RL_set_hp_perc_leg_r", "variables": { "hp": { "context_val": "hp" } } }
+    ]
   }
 ]

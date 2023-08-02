@@ -1,0 +1,12 @@
+[
+  {
+    "id": "act_rl_repair_kit",
+    "type": "activity_type",
+    "activity_level": "NO_EXERCISE",
+    "verb": "修理中",
+    "based_on": "time",
+    "suspendable": false,
+    "do_turn_eoc": "EOC_RL_repair_kit_do_turn",
+    "completion_eoc": "EOC_RL_repair_kit_completion"
+  }
+]
